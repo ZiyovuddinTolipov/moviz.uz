@@ -1,7 +1,8 @@
+import Navbar from './components/Navbar'
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <main className='bg-[#0F1C2E] h-screen'>
+      <Navbar />
+    </main>
   )
 }
