@@ -5,8 +5,10 @@ const Navbar = () => {
             <div>
                 <a href="#"> <img src={logooq} alt="moviz.uz logo moviz.cg instagram " className="h-8" /></a>
             </div>
-            <ul className="flex text-white gap-3 text-xl">
-                <li>rout</li>
+            <ul className="flex text-white gap-3 text-xl font-semibold">
+                <a href="#allproduct">
+                <li>All roduct</li>
+                </a>
                 <li>rout</li>
                 <li>About</li>
             </ul>
