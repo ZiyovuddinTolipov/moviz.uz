@@ -13,8 +13,8 @@ const App = () => {
             { opacity: 0, scale: 0.5 },
             { opacity: 1, scale: 1, duration: 2, repeat: 0, yoyo: true, stagger: 1 })
     }, [])
-    const styles ={
-    videoBox:"w-1/2 flex items-center justify-center"
+    const styles = {
+        videoBox: "w-1/2 flex items-center justify-center"
     }
     return (
         <section className='h-screen max-w-[1400px] mx-auto w-full ' id='allproduct'>
@@ -31,8 +31,8 @@ const App = () => {
                     {el}{" "}
                 </motion.span>
             ))}</h1>
-            <div ref={el} className='flex gap-3 items-center text-white text-xl font-semibold'>
-                <div className='flex box justify-between' >
+            <div ref={el} className='flex flex-row flex-wrap text-white text-xl font-semibold'>
+                <div className='flex box w-1/2 justify-between' >
                     <div className='w-1/2 flex flex-col gap-3 justify-center'>
                         <h3 className='text-white'>
                             Video Type : <span>SMD post animation</span>
@@ -55,7 +55,7 @@ const App = () => {
                     </div>
                 </div>
 
-                <div className='flex box justify-between' >
+                <div className='flex box w-1/2 justify-between' >
                     <div className='w-1/2 flex flex-col gap-3 justify-center'>
                         <h3 className='text-white'>
                             Video Type : <span>SMD post animation</span>
@@ -78,9 +78,7 @@ const App = () => {
                     </div>
                 </div>
 
-            </div>
-            <div ref={el} className='flex gap-3 items-center text-white text-xl font-semibold'>
-                <div className='flex box justify-between' >
+                <div className='flex box w-1/3 justify-between' >
                     <div className='w-1/2 flex flex-col gap-3 justify-center'>
                         <h3 className='text-white'>
                             Video Type : <span>SMD post animation</span>
@@ -102,7 +100,7 @@ const App = () => {
                         <img src={moviz1} alt="img" className='h-[300px] rounded-xl' />
                     </div>
                 </div>
-                <div className='flex box justify-between' >
+                <div className='flex box w-1/2 justify-between' >
                     <div className='w-1/2 flex flex-col gap-3 justify-center'>
                         <h3 className='text-white'>
                             Video Type : <span>SMD post animation</span>
@@ -125,6 +123,7 @@ const App = () => {
                     </div>
                 </div>
             </div>
+
         </section>
     );
 };
