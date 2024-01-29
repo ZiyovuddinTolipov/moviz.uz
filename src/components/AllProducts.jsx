@@ -11,13 +11,13 @@ const App = () => {
     useEffect(() => {
         gsap.fromTo(elInner('.box'),
             { opacity: 0, scale: 0.5 },
-            { opacity: 1, scale: 1, duration: 0, repeat: 0, yoyo: true, stagger: 1 })
+            { opacity: 1, scale: 1, duration: 2, repeat: 0, yoyo: true, stagger: 1 })
     }, [])
     const styles ={
     videoBox:"w-1/2 flex items-center justify-center"
     }
     return (
-        <main className='h-screen max-w-[1400px] mx-auto w-full ' id='allproduct'>
+        <section className='h-screen max-w-[1400px] mx-auto w-full ' id='allproduct'>
             <h1 className='text-3xl text-white w-4/5 text-left font-bold'>  {text.map((el, i) => (
                 <motion.span
                     initial={{ opacity: 0 }}
@@ -125,7 +125,7 @@ const App = () => {
                     </div>
                 </div>
             </div>
-        </main>
+        </section>
     );
 };
 
