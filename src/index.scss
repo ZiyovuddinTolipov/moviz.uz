@@ -5,9 +5,10 @@ body {
     font-family: "Roboto", sans-serif;
 }
 $animation-delay: 0.1s;
-$arrow-size: 12px;
+$arrow-size: 18px;
 
 .scroll-arrow {
+    z-index: 10;
     width: $arrow-size;
     height: $arrow-size;
     transform: rotate(45deg);
@@ -33,3 +34,11 @@ $arrow-size: 12px;
         opacity: 1;
     }
 }
+.box{
+    width:100%;
+    height:400px;
+    background-color:#475569;
+    margin-top: 16px;
+    border-radius: 20px;
+    padding: 16px;
+}  
