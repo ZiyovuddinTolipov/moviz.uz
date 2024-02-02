@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { gsap } from "gsap";
 import { motion } from "framer-motion";
 import moviz1 from '../assets/moviz1.jpg'
-
+import video1 from '../assets/videos/video1.mp4'
 const App = () => {
     const text = "Lorem ipsum dolor sit amet, ".split(" ");
     const el = useRef();
@@ -14,7 +14,7 @@ const App = () => {
             { opacity: 1, scale: 1, duration: 1, repeat: 0, yoyo: true, stagger: 1 })
     }, [])
     const styles = {
-        videoBox: "w-1/2 flex items-center justify-center overflow-hidden w-[200px] h-[380px]"
+    videoBox: "w-1/2 flex items-center justify-center overflow-hidden w-full max-w-[300px] h-[380px]"
     }
     const [isPlaying, setIsPlaying] = useState(false);
 
@@ -28,7 +28,7 @@ const App = () => {
         setIsPlaying(false);
     };
     return (
-        <section className='max-w-[1400px] mx-auto w-full mt-20' id='allproduct'>
+        <section className='max-w-[1400px] mx-auto w-full mt-20 ' id='allproduct'>
             <h1 className='text-3xl text-white w-4/5 text-left font-bold'> {text.map((el, i) => (
                 <motion.span
                     initial={{ opacity: 0 }}
@@ -66,7 +66,7 @@ const App = () => {
                     </div>
                     <div className={`${styles.videoBox} relative`}>
                         <video
-                            src={'https://www.dropbox.com/scl/fi/8ryk2kwu11liipnpwiw0c/1_1.mp4?rlkey=b56mpp0neq4uamv112ts2szfi&dl=1'}
+                            src={video1}
                             autoPlay
                             controls
                             className='object-cover rounded-xl z-50'
@@ -98,7 +98,7 @@ const App = () => {
                     </div>
                     <div className={styles.videoBox}>
                         <video
-                            src={'https://www.dropbox.com/scl/fi/8ryk2kwu11liipnpwiw0c/1_1.mp4?rlkey=b56mpp0neq4uamv112ts2szfi&dl=1'}
+                            src={video1}
                             autoPlay
                             controls
                             className='object-cover rounded-xl z-50'
@@ -128,7 +128,7 @@ const App = () => {
                     </div>
                     <div className={styles.videoBox}>
                         <video
-                            src={'https://www.dropbox.com/scl/fi/8ryk2kwu11liipnpwiw0c/1_1.mp4?rlkey=b56mpp0neq4uamv112ts2szfi&dl=1'}
+                            src={video1}
                             autoPlay
                             controls
                             className='object-cover rounded-xl z-50'
@@ -158,7 +158,7 @@ const App = () => {
                     </div>
                     <div className={styles.videoBox}>
                         <video
-                            src={'https://www.dropbox.com/scl/fi/8ryk2kwu11liipnpwiw0c/1_1.mp4?rlkey=b56mpp0neq4uamv112ts2szfi&dl=1'}
+                            src={video1}
                             autoPlay
                             controls
                             className='object-cover rounded-xl z-50'
