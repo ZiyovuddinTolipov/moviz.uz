@@ -135,7 +135,7 @@ section {
     width: var(--size);
     height: var(--size);
     filter: blur(calc(var(--size) / 5));
-    background-image: linear-gradient(hsl(158, 82, 57, 85%), hsl(252, 82, 57));
+    background-image: linear-gradient(rgba(55, 235, 169, 0.85), rgb(91, 55, 235));
     animation: rotate var(--speed) var(--easing) alternate infinite;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     z-index: 1;

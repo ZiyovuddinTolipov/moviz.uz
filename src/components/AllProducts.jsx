@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react'
 import { gsap } from "gsap";
 import { motion } from "framer-motion";
 import moviz1 from '../assets/moviz1.jpg'
-import video1 from '../assets/videos/video1.mp4'
 
 const App = () => {
     const text = "Lorem ipsum dolor sit amet, ".split(" ");
@@ -67,7 +66,7 @@ const App = () => {
                     </div>
                     <div className={`${styles.videoBox} relative`}>
                         <video
-                            src={video1}
+                            src={'https://www.dropbox.com/scl/fi/8ryk2kwu11liipnpwiw0c/1_1.mp4?rlkey=b56mpp0neq4uamv112ts2szfi&dl=1'}
                             autoPlay
                             controls
                             className='object-cover rounded-xl z-50'
@@ -99,7 +98,7 @@ const App = () => {
                     </div>
                     <div className={styles.videoBox}>
                         <video
-                            src={video1}
+                            src={'https://www.dropbox.com/scl/fi/8ryk2kwu11liipnpwiw0c/1_1.mp4?rlkey=b56mpp0neq4uamv112ts2szfi&dl=1'}
                             autoPlay
                             controls
                             className='object-cover rounded-xl z-50'
@@ -129,7 +128,7 @@ const App = () => {
                     </div>
                     <div className={styles.videoBox}>
                         <video
-                            src={video1}
+                            src={'https://www.dropbox.com/scl/fi/8ryk2kwu11liipnpwiw0c/1_1.mp4?rlkey=b56mpp0neq4uamv112ts2szfi&dl=1'}
                             autoPlay
                             controls
                             className='object-cover rounded-xl z-50'
@@ -159,7 +158,7 @@ const App = () => {
                     </div>
                     <div className={styles.videoBox}>
                         <video
-                            src={video1}
+                            src={'https://www.dropbox.com/scl/fi/8ryk2kwu11liipnpwiw0c/1_1.mp4?rlkey=b56mpp0neq4uamv112ts2szfi&dl=1'}
                             autoPlay
                             controls
                             className='object-cover rounded-xl z-50'
