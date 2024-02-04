@@ -60,7 +60,7 @@ const App = () => {
     return (
         <section className='w-full' id='allproduct'>
             <main className='max-w-[1400px] mx-auto w-full pt-20'>
-                <h1 className='text-3xl text-white w-4/5 text-left font-bold'> {text.map((el, i) => (
+                <h1 className='text-3xl text-white w-4/5 text-left font-bold p-3 md:p-5'> {text.map((el, i) => (
                     <motion.span
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -73,8 +73,8 @@ const App = () => {
                         {el}{" "}
                     </motion.span>
                 ))}</h1>
-                <div ref={el} className='flex gap-[4%] flex-row flex-wrap text-white text-xl font-semibold'>
-                    <div className='flex box w-1/2 justify-between basis-[48%] max-w-[50%] mt-[3rem] relative' >
+                <div ref={el} className='flex gap-[4%] flex-row flex-wrap text-white text-xl font-semibold p-3 md:p-5'>
+                    <div className='flex box w-1/2 justify-between basis-[48%] max-w-[50%] mt-[3rem] relative ' >
                         <div className={videoID==1 ? "gradient absolute" : "absolute"} />
                         <div className='w-1/2 flex flex-col gap-3 justify-between py-4 pl-4'>
                             <div>
