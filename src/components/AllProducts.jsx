@@ -74,7 +74,7 @@ const App = () => {
         infoCard :'flex flex-col-reverse md:flex-row box bg-white/30 backdrop-blur-md justify-between basis-auto md:basis-[48%] mt-[3rem] relative gap-2',
         video:'rounded-xl max-w-[300px] h-auto',
         cardInfo:'w-full md:w-1/2 text-base sm:text-xl flex flex-col gap-2 sm:gap-1 justify-between py-4 pl-2 text-left',
-        infoBtnBox:'w-100 flex justify-between'
+        infoBtnBox:'w-100 flex justify-between mt-2'
     }
     return (
         <section className='w-full border-t-2 border-t-slate-300' id='allproduct'>

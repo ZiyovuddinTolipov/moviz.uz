@@ -4,7 +4,7 @@ const Hero = () => {
     const text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, eaque!".split(" ");
     return (
         <section className="max-w-[1400px] mx-auto w-full flex flex-col justify-center items-center  h-screen " id="home">
-            <h2 className="text-6xl text-white w-4/5 text-center font-bold">
+            <h2 className="text-3xl md:text-6xl text-white w-4/5 text-center font-bold">
                 {text.map((el, i) => (
                     <motion.span
                         initial={{ opacity: 0 }}
