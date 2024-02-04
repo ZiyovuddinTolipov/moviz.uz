@@ -14,6 +14,18 @@ const App = () => {
         useRef(null),
         useRef(null),
     ];
+    const LinkButton = () => {
+        return (
+            <a href="#">
+                <button type="button" className="text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2">
+                    <svg className='me-2' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 48 48">
+                        <path fill="#29b6f6" d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z" /><path fill="#fff" d="M34,15l-3.7,19.1c0,0-0.2,0.9-1.2,0.9c-0.6,0-0.9-0.3-0.9-0.3L20,28l-4-2l-5.1-1.4c0,0-0.9-0.3-0.9-1\tc0-0.6,0.9-0.9,0.9-0.9l21.3-8.5c0,0,0.7-0.2,1.1-0.2c0.3,0,0.6,0.1,0.6,0.5C34,14.8,34,15,34,15z" /><path fill="#b0bec5" d="M23,30.5l-3.4,3.4c0,0-0.1,0.1-0.3,0.1c-0.1,0-0.1,0-0.2,0l1-6L23,30.5z" /><path fill="#cfd8dc" d="M29.9,18.2c-0.2-0.2-0.5-0.3-0.7-0.1L16,26c0,0,2.1,5.9,2.4,6.9c0.3,1,0.6,1,0.6,1l1-6l9.8-9.1\tC30,18.7,30.1,18.4,29.9,18.2z" />
+                    </svg>
+                    Buyurtma
+                </button>
+            </a>
+        )
+    }
 
     const handlePlay = (index) => {
         console.log(`Video ${index + 1} is playing`);
@@ -73,9 +85,9 @@ const App = () => {
                     </motion.span>
                 ))}</h1>
                 <div ref={el} className='flex gap-[4%] flex-row flex-wrap text-white text-xl font-semibold p-3 md:p-5'>
-                    <div className='flex box w-1/2 justify-between basis-[48%] max-w-[50%] mt-[3rem] relative ' >
-                        <div className={videoID==1 ? "gradient absolute" : "absolute"} />
-                        <div className='w-1/2 flex flex-col gap-3 justify-between py-4 pl-4'>
+                    <div className='flex box w-1/2 justify-between basis-[48%] max-w-[50%] mt-[3rem] relative gap-2' >
+                        <div className={videoID == 1 ? "gradient absolute" : "absolute"} />
+                        <div className='w-1/2 flex flex-col gap-1 justify-between py-4 pl-2 text-base'>
                             <div>
                                 <h3 className='text-white'>
                                     Video Type : <span>SMD post animation</span>
@@ -90,8 +102,9 @@ const App = () => {
                                     Video Type : <span>SMD post animation</span>
                                 </h3>
                             </div>
-                            <div>
+                            <div className='w-100 flex justify-around'>
                                 <button>49$</button>
+                                <LinkButton />
                             </div>
                         </div>
                         <div className={`${styles.videoBox} relative`}>
@@ -108,23 +121,26 @@ const App = () => {
                         </div>
                     </div>
                     <div className='flex box w-1/2 justify-between basis-[48%] max-w-[50%] mt-[3rem]' >
-                    <div className={videoID==2 ? "gradient absolute" : "absolute"} />
-                        <div className='w-1/2 flex flex-col gap-3 justify-center'>
-                            <h3 className='text-white'>
-                                Video Type : <span>SMD post animation</span>
-                            </h3>
-                            <h3 className='text-white'>
-                                Video Type : <span>SMD post animation</span>
-                            </h3>
-                            <h3 className='text-white'>
-                                Video Type : <span>SMD post animation</span>
-                            </h3>
-                            <h3 className='text-white'>
-                                Video Type : <span>SMD post animation</span>
-                            </h3>
-                            <h3>
-
-                            </h3>
+                        <div className={videoID == 2 ? "gradient absolute" : "absolute"} />
+                        <div className='w-1/2 flex flex-col gap-1 justify-between py-4 pl-2 text-base'>
+                            <div>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                            </div>
+                            <div className='w-100 flex justify-around'>
+                                <button>49$</button>
+                                <LinkButton />
+                            </div>
                         </div>
                         <div className={styles.videoBox}>
                             <video
@@ -140,23 +156,26 @@ const App = () => {
                         </div>
                     </div>
                     <div className='flex box w-1/2 justify-between basis-[48%] max-w-[50%] mt-[3rem]' >
-                    <div className={videoID==3 ? "gradient absolute" : "absolute"} />
-                        <div className='w-1/2 flex flex-col gap-3 justify-center'>
-                            <h3 className='text-white'>
-                                Video Type : <span>SMD post animation</span>
-                            </h3>
-                            <h3 className='text-white'>
-                                Video Type : <span>SMD post animation</span>
-                            </h3>
-                            <h3 className='text-white'>
-                                Video Type : <span>SMD post animation</span>
-                            </h3>
-                            <h3 className='text-white'>
-                                Video Type : <span>SMD post animation</span>
-                            </h3>
-                            <h3>
-
-                            </h3>
+                        <div className={videoID == 3 ? "gradient absolute" : "absolute"} />
+                        <div className='w-1/2 flex flex-col gap-1 justify-between py-4 pl-2 text-base'>
+                            <div>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                            </div>
+                            <div className='w-100 flex justify-around'>
+                                <button>49$</button>
+                                <LinkButton />
+                            </div>
                         </div>
                         <div className={styles.videoBox}>
                             <video
@@ -172,23 +191,26 @@ const App = () => {
                         </div>
                     </div>
                     <div className='flex box w-1/2 justify-between basis-[48%] max-w-[50%] my-[3rem]' >
-                    <div className={videoID==4 ? "gradient absolute" : "absolute"} />
-                        <div className='w-1/2 flex flex-col gap-3 justify-center'>
-                            <h3 className='text-white'>
-                                Video Type : <span>SMD post animation</span>
-                            </h3>
-                            <h3 className='text-white'>
-                                Video Type : <span>SMD post animation</span>
-                            </h3>
-                            <h3 className='text-white'>
-                                Video Type : <span>SMD post animation</span>
-                            </h3>
-                            <h3 className='text-white'>
-                                Video Type : <span>SMD post animation</span>
-                            </h3>
-                            <h3>
-
-                            </h3>
+                        <div className={videoID == 4 ? "gradient absolute" : "absolute"} />
+                        <div className='w-1/2 flex flex-col gap-1 justify-between py-4 pl-2 text-base'>
+                            <div>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                            </div>
+                            <div className='w-100 flex justify-around'>
+                                <button>49$</button>
+                                <LinkButton />
+                            </div>
                         </div>
                         <div className={styles.videoBox}>
                             <video
