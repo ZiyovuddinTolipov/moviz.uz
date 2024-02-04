@@ -32,7 +32,7 @@ const App = () => {
     }
 
     const handlePlay = (index) => {
-        console.log(`Video ${index + 1} is playing`);
+        // console.log(`Video ${index + 1} is playing`);
         setIsPlaying(true);
         setVideoID(index + 1);
 
@@ -45,13 +45,13 @@ const App = () => {
     };
 
     const handlePause = (index) => {
-        console.log(`Video ${index + 1} is paused`);
+        // console.log(`Video ${index + 1} is paused`);
         setIsPlaying(false);
         setVideoID(null);
     };
 
     const handleVideoEnd = (index) => {
-        console.log(`Video ${index + 1} has ended`);
+        // console.log(`Video ${index + 1} has ended`);
         setIsPlaying(false);
 
         // Boshqa videolarni avtomatik ravishda boshlash

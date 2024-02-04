@@ -19,11 +19,6 @@ const Hero = () => {
                     </motion.span>
                 ))}
             </h2>
-            <div className="absolute bottom-2">
-                <div className="scroll-arrow" />
-                <div className="scroll-arrow" />
-                <div className="scroll-arrow" />
-            </div>
             <div className="lines absolute">
                 <div className="line" />
                 <div className="line" />
