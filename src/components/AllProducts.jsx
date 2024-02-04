@@ -114,6 +114,7 @@ const App = () => {
                                 onPlay={() => handlePlay(0)}
                                 onPause={() => handlePause(0)}
                                 onEnded={() => handleVideoEnd(0)}
+                                className='rounded-xl'
                             >
                                 <source src={video1} type="video/mp4" />
                                 Your browser does not support the video tag.
@@ -149,6 +150,7 @@ const App = () => {
                                 onPlay={() => handlePlay(1)}
                                 onPause={() => handlePause(1)}
                                 onEnded={() => handleVideoEnd(1)}
+                                className='rounded-xl'
                             >
                                 <source src={video1} type="video/mp4" />
                                 Your browser does not support the video tag.
@@ -184,6 +186,7 @@ const App = () => {
                                 onPlay={() => handlePlay(2)}
                                 onPause={() => handlePause(2)}
                                 onEnded={() => handleVideoEnd(2)}
+                                className='rounded-xl'
                             >
                                 <source src={video1} type="video/mp4" />
                                 Your browser does not support the video tag.
@@ -219,6 +222,7 @@ const App = () => {
                                 onPlay={() => handlePlay(3)}
                                 onPause={() => handlePause(3)}
                                 onEnded={() => handleVideoEnd(3)}
+                                className='rounded-xl'
                             >
                                 <source src={video1} type="video/mp4" />
                                 Your browser does not support the video tag.

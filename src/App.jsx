@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 import About from './components/About'
 export default function App() {
   return (
-    <main className='bg-[#1e293b]'>
+    <main className='bg-[#0a0e14]'>
       <Navbar />
       <Hero />
       <AllProducts />

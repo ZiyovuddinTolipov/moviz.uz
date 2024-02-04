@@ -2,8 +2,8 @@
 
 /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
 $bg-url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC";
-$bg-width: 50px;
-$bg-height: 50px;
+$bg-width: 25px;
+$bg-height: 25px;
 
 /* Animations */
 @-webkit-keyframes bg-scrolling-reverse {
@@ -50,16 +50,29 @@ $bg-height: 50px;
 
 /* Main styles */
 #allproduct {
+    position: relative;
     margin-top: 13.5rem;
     text-align: center;
-    /* img size is 50x50 */
+    /* img size is 50x50 */ 
     background: url(../assets/bg_41.png) repeat 0 0;
-    -webkit-animation: bg-scrolling-reverse 0.92s infinite; /* Safari 4+ */
-    -moz-animation: bg-scrolling-reverse 0.92s infinite; /* Fx 5+ */
-    -o-animation: bg-scrolling-reverse 0.92s infinite; /* Opera 12+ */
-    animation: bg-scrolling-reverse 0.92s infinite; /* IE 10+ */
+    -webkit-animation: bg-scrolling-reverse 1.5s infinite; /* Safari 4+ */
+    -moz-animation: bg-scrolling-reverse 1.5s infinite; /* Fx 5+ */
+    -o-animation: bg-scrolling-reverse 1.5s infinite; /* Opera 12+ */
+    animation: bg-scrolling-reverse 1.5s infinite; /* IE 10+ */
     -webkit-animation-timing-function: linear;
     -moz-animation-timing-function: linear;
     -o-animation-timing-function: linear;
     animation-timing-function: linear;
+    &::after {
+        position: absolute;
+        content: " ";
+        width: 99vw;
+        height: 5px;
+        background: #ffffff;
+        // background: linear-gradient(180deg, rgba(30,41,59,1) 0%, rgba(30,41,59,1) 35%, rgba(30,41,59,1) 100%);
+        z-index: 100;
+        left: 0;
+        right: 0;
+        top: -5px;
+    }
 }
