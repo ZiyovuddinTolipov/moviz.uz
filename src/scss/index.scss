@@ -3,8 +3,8 @@
 @tailwind utilities;
 @import url(./_bg.scss);
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     scroll-snap-type: y mandatory;
@@ -52,7 +52,6 @@ $arrow-size: 18px;
     }
 }
 .box {
-    height: 400px;
     background-color: #475569;
     border-radius: 20px;
     padding: 16px;
@@ -63,8 +62,8 @@ $arrow-size: 18px;
 }
 
 section {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    // scroll-snap-align: start;
+    // scroll-snap-stop: always;
 }
 
 .lines {

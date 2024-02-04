@@ -13,6 +13,8 @@ const App = () => {
         useRef(null),
         useRef(null),
         useRef(null),
+        useRef(null),
+        useRef(null),
     ];
     const LinkButton = () => {
         return (
@@ -66,7 +68,10 @@ const App = () => {
             { opacity: 1, scale: 1, duration: 1, repeat: 0, yoyo: true, stagger: 1 })
     }, [])
     const styles = {
-        videoBox: "w-1/2 flex items-center justify-center overflow-hidden w-full max-w-[300px] h-[380px]"
+        videoBox: "flex items-center justify-center h-[500px] md:h-[380px]",
+        infoCard :'flex flex-col-reverse md:flex-row box   justify-between basis-auto md:basis-[48%] mt-[3rem] relative gap-2',
+        video:'rounded-xl max-w-[300px]',
+        cardInfo:'w-full md:w-1/2 text-xs sm:text-base flex flex-col gap-2 sm:gap-1 justify-between py-4 pl-2'
     }
     return (
         <section className='w-full' id='allproduct'>
@@ -84,10 +89,10 @@ const App = () => {
                         {el}{" "}
                     </motion.span>
                 ))}</h1>
-                <div ref={el} className='flex gap-[4%] flex-row flex-wrap text-white text-xl font-semibold p-3 md:p-5'>
-                    <div className='flex box w-1/2 justify-between basis-[48%] max-w-[50%] mt-[3rem] relative gap-2' >
+                <div ref={el} className='flex gap-[4%] flex-col items-center md:flex-row flex-wrap text-white text-xl font-semibold p-3 md:p-5'>
+                    <div className={styles.infoCard} >
                         <div className={videoID == 1 ? "gradient absolute" : "absolute"} />
-                        <div className='w-1/2 flex flex-col gap-1 justify-between py-4 pl-2 text-base'>
+                        <div className={styles.cardInfo}>
                             <div>
                                 <h3 className='text-white'>
                                     Video Type : <span>SMD post animation</span>
@@ -107,23 +112,23 @@ const App = () => {
                                 <LinkButton />
                             </div>
                         </div>
-                        <div className={`${styles.videoBox} relative`}>
+                        <div className={`${styles.videoBox}`}>
                             <video
                                 ref={videoRefs[0]}
                                 controls
                                 onPlay={() => handlePlay(0)}
                                 onPause={() => handlePause(0)}
                                 onEnded={() => handleVideoEnd(0)}
-                                className='rounded-xl'
+                                className={styles.video}
                             >
                                 <source src={video1} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
                     </div>
-                    <div className='flex box w-1/2 justify-between basis-[48%] max-w-[50%] mt-[3rem]' >
+                    <div className={styles.infoCard} >
                         <div className={videoID == 2 ? "gradient absolute" : "absolute"} />
-                        <div className='w-1/2 flex flex-col gap-1 justify-between py-4 pl-2 text-base'>
+                        <div className={styles.cardInfo}>
                             <div>
                                 <h3 className='text-white'>
                                     Video Type : <span>SMD post animation</span>
@@ -150,16 +155,16 @@ const App = () => {
                                 onPlay={() => handlePlay(1)}
                                 onPause={() => handlePause(1)}
                                 onEnded={() => handleVideoEnd(1)}
-                                className='rounded-xl'
+                                className={styles.video}
                             >
                                 <source src={video1} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
                     </div>
-                    <div className='flex box w-1/2 justify-between basis-[48%] max-w-[50%] mt-[3rem]' >
+                    <div className={styles.infoCard} >
                         <div className={videoID == 3 ? "gradient absolute" : "absolute"} />
-                        <div className='w-1/2 flex flex-col gap-1 justify-between py-4 pl-2 text-base'>
+                        <div className={styles.cardInfo}>
                             <div>
                                 <h3 className='text-white'>
                                     Video Type : <span>SMD post animation</span>
@@ -186,16 +191,16 @@ const App = () => {
                                 onPlay={() => handlePlay(2)}
                                 onPause={() => handlePause(2)}
                                 onEnded={() => handleVideoEnd(2)}
-                                className='rounded-xl'
+                                className={styles.video}
                             >
                                 <source src={video1} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
                     </div>
-                    <div className='flex box w-1/2 justify-between basis-[48%] max-w-[50%] my-[3rem]' >
+                    <div className={styles.infoCard} >
                         <div className={videoID == 4 ? "gradient absolute" : "absolute"} />
-                        <div className='w-1/2 flex flex-col gap-1 justify-between py-4 pl-2 text-base'>
+                        <div className={styles.cardInfo}>
                             <div>
                                 <h3 className='text-white'>
                                     Video Type : <span>SMD post animation</span>
@@ -222,7 +227,79 @@ const App = () => {
                                 onPlay={() => handlePlay(3)}
                                 onPause={() => handlePause(3)}
                                 onEnded={() => handleVideoEnd(3)}
-                                className='rounded-xl'
+                                className={styles.video}
+                            >
+                                <source src={video1} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div className={styles.infoCard} >
+                        <div className={videoID == 5 ? "gradient absolute" : "absolute"} />
+                        <div className={styles.cardInfo}>
+                            <div>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                            </div>
+                            <div className='w-100 flex justify-around'>
+                                <button>49$</button>
+                                <LinkButton />
+                            </div>
+                        </div>
+                        <div className={styles.videoBox}>
+                            <video
+                                ref={videoRefs[4]}
+                                controls
+                                onPlay={() => handlePlay(4)}
+                                onPause={() => handlePause(4)}
+                                onEnded={() => handleVideoEnd(4)}
+                                className={styles.video}
+                            >
+                                <source src={video1} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div className={styles.infoCard} >
+                        <div className={videoID == 6 ? "gradient absolute" : "absolute"} />
+                        <div className={styles.cardInfo}>
+                            <div>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                                <h3 className='text-white'>
+                                    Video Type : <span>SMD post animation</span>
+                                </h3>
+                            </div>
+                            <div className='w-100 flex justify-around'>
+                                <button>49$</button>
+                                <LinkButton />
+                            </div>
+                        </div>
+                        <div className={styles.videoBox}>
+                            <video
+                                ref={videoRefs[5]}
+                                controls
+                                onPlay={() => handlePlay(5)}
+                                onPause={() => handlePause(5)}
+                                onEnded={() => handleVideoEnd(5)}
+                                className={styles.video}
                             >
                                 <source src={video1} type="video/mp4" />
                                 Your browser does not support the video tag.
