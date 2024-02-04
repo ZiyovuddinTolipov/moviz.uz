@@ -79,7 +79,7 @@ const App = () => {
     return (
         <section className='w-full border-t-2 border-t-slate-300' id='allproduct'>
             <main className='max-w-[1400px] mx-auto w-full pt-20'>
-                <h1 className='text-3xl text-white w-4/5 text-left font-bold p-3 md:p-5'> {text.map((el, i) => (
+                <h1 className='text-2xl md:text-3xl text-center text-white w-4/5 md:text-left font-bold p-3 md:p-5'> {text.map((el, i) => (
                     <motion.span
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
