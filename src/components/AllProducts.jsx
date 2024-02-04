@@ -24,7 +24,6 @@ const App = () => {
         videoRefs.forEach((ref, i) => {
             if (i !== index && ref.current) {
                 ref.current.pause();
-                setVideoID(null);
             }
         });
     };
@@ -32,7 +31,7 @@ const App = () => {
     const handlePause = (index) => {
         console.log(`Video ${index + 1} is paused`);
         setIsPlaying(false);
-        setVideoID(index + 1);
+        setVideoID(null);
     };
 
     const handleVideoEnd = (index) => {
