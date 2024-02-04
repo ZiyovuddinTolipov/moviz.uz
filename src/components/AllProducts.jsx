@@ -70,10 +70,11 @@ const App = () => {
             { opacity: 1, scale: 1, duration: 1, repeat: 0, yoyo: true, stagger: 1 })
     }, [])
     const styles = {
-        videoBox: "flex items-center justify-center h-[500px] md:h-[380px]",
+        videoBox: "flex items-center justify-center md:items-end h-[400px] md:h-[400px] md:h-[380px]",
         infoCard :'flex flex-col-reverse md:flex-row box bg-white/30 backdrop-blur-md justify-between basis-auto md:basis-[48%] mt-[3rem] relative gap-2',
-        video:'rounded-xl max-w-[300px]',
-        cardInfo:'w-full md:w-1/2 text-xs sm:text-base flex flex-col gap-2 sm:gap-1 justify-between py-4 pl-2'
+        video:'rounded-xl max-w-[300px] h-auto',
+        cardInfo:'w-full md:w-1/2 text-base sm:text-xl flex flex-col gap-2 sm:gap-1 justify-between py-4 pl-2 text-left',
+        infoBtnBox:'w-100 flex justify-between'
     }
     return (
         <section className='w-full border-t-2 border-t-slate-300' id='allproduct'>
@@ -109,7 +110,7 @@ const App = () => {
                                     Video Type : <span>SMD post animation</span>
                                 </h3>
                             </div>
-                            <div className='w-100 flex justify-around'>
+                            <div className={styles.infoBtnBox}>
                                 <button>49$</button>
                                 <LinkButton />
                             </div>
@@ -145,7 +146,7 @@ const App = () => {
                                     Video Type : <span>SMD post animation</span>
                                 </h3>
                             </div>
-                            <div className='w-100 flex justify-around'>
+                            <div className={styles.infoBtnBox}>
                                 <button>49$</button>
                                 <LinkButton />
                             </div>
@@ -181,7 +182,7 @@ const App = () => {
                                     Video Type : <span>SMD post animation</span>
                                 </h3>
                             </div>
-                            <div className='w-100 flex justify-around'>
+                            <div className={styles.infoBtnBox}>
                                 <button>49$</button>
                                 <LinkButton />
                             </div>
@@ -217,7 +218,7 @@ const App = () => {
                                     Video Type : <span>SMD post animation</span>
                                 </h3>
                             </div>
-                            <div className='w-100 flex justify-around'>
+                            <div className={styles.infoBtnBox}>
                                 <button>49$</button>
                                 <LinkButton />
                             </div>
@@ -253,7 +254,7 @@ const App = () => {
                                     Video Type : <span>SMD post animation</span>
                                 </h3>
                             </div>
-                            <div className='w-100 flex justify-around'>
+                            <div className={styles.infoBtnBox}>
                                 <button>49$</button>
                                 <LinkButton />
                             </div>
@@ -289,7 +290,7 @@ const App = () => {
                                     Video Type : <span>SMD post animation</span>
                                 </h3>
                             </div>
-                            <div className='w-100 flex justify-around'>
+                            <div className={styles.infoBtnBox}>
                                 <button>49$</button>
                                 <LinkButton />
                             </div>
