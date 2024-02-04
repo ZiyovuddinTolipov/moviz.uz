@@ -1,47 +1,53 @@
-import React, { useEffect, useRef } from "react";
-import { words } from "./data";
+import React, { useRef, useState } from 'react';
 
-import styles from "./Loader.module.scss";
-import { introAnimation, collapseWords, progressAnimation } from "./animations";
+const VideoPlayer = () => {
+    const [isPlaying, setIsPlaying] = useState(false);
+    const videoRefs = Array.from({ length: 4 }, () => useRef(null));
 
-const Loader = ({ timeline }) => {
-    const loaderRef = useRef(null);
-    const progressRef = useRef(null);
-    const progressNumberRef = useRef(null);
-    const wordGroupsRef = useRef(null);
+    const handlePlay = (index) => {
+        console.log(`Video ${index + 1} is playing`);
+        setIsPlaying(true);
+        // Boshqa videolarni pause qilish
+        videoRefs.forEach((ref, i) => {
+            if (i !== index && ref.current) {
+                ref.current.pause();
+            }
+        });
+    };
 
-    useEffect(() => {
-        timeline &&
-            timeline
-                .add(introAnimation(wordGroupsRef))
-                .add(progressAnimation(progressRef, progressNumberRef), 0)
-                .add(collapseWords(loaderRef), "-=1");
-    }, [timeline]);
+    const handlePause = () => {
+        console.log('Video is paused');
+        setIsPlaying(false);
+    };
+
+    const handleVideoEnd = (index) => {
+        console.log(`Video ${index + 1} has ended`);
+        setIsPlaying(false);
+
+        // Boshqa videolarni avtomatik ravishda boshlash
+        const nextIndex = (index + 1) % 4;
+        videoRefs[nextIndex].current.play();
+    };
 
     return (
-        <div className={styles.loader__wrapper}>
-            <div className={styles.loader__progressWrapper}>
-                <div className={styles.loader__progress} ref={progressRef}></div>
-                <span className={styles.loader__progressNumber} ref={progressNumberRef}>
-                    0
-                </span>
-            </div>
-            <div className={styles.loader} ref={loaderRef}>
-                <div className={styles.loader__words}>
-                    <div className={styles.loader__overlay}></div>
-                    <div ref={wordGroupsRef} className={styles.loader__wordsGroup}>
-                        {words.map((word, index) => {
-                            return (
-                                <span key={index} className={styles.loader__word}>
-                                    {word}
-                                </span>
-                            );
-                        })}
-                    </div>
-                </div>
-            </div>
+        <div>
+            {videoRefs.map((videoRef, index) => (
+                <video
+                    key={index}
+                    ref={videoRef}
+                    controls
+                    onPlay={() => handlePlay(index)}
+                    onPause={handlePause}
+                    onEnded={() => handleVideoEnd(index)}
+                >
+                    <source src={`video-${index + 1}.mp4`} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            ))}
+
+            <p>{isPlaying ? 'Video is playing' : 'Video is paused'}</p>
         </div>
     );
 };
 
-export default Loader;
+export default VideoPlayer;

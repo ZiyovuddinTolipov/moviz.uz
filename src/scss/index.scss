@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url(./_bg.scss);
 body {
     margin: 0;
     padding: 0;
@@ -138,7 +139,7 @@ section {
     background-image: linear-gradient(rgba(55, 235, 169, 0.85), hsl(252, 82, 57));
     animation: rotate var(--speed) var(--easing) alternate infinite;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    z-index: 1;
+    z-index: -11;
 }
 
 @media (min-width: 720px) {
