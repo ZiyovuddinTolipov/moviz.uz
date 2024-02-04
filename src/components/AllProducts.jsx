@@ -74,7 +74,7 @@ const App = () => {
         cardInfo:'w-full md:w-1/2 text-xs sm:text-base flex flex-col gap-2 sm:gap-1 justify-between py-4 pl-2'
     }
     return (
-        <section className='w-full' id='allproduct'>
+        <section className='w-full border-t-2 border-t-slate-300' id='allproduct'>
             <main className='max-w-[1400px] mx-auto w-full pt-20'>
                 <h1 className='text-3xl text-white w-4/5 text-left font-bold p-3 md:p-5'> {text.map((el, i) => (
                     <motion.span
