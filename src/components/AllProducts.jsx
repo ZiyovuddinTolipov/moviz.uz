@@ -20,13 +20,11 @@ const App = () => {
     ];
     const LinkButton = () => {
         return (
-            <a href="#" className='w-full'>
-                <button type="button" className="w-full max-w-[200px] text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100  rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-0 uppercase font-semibold">
-                    <svg className='me-2 w-6 h-6' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
-                        <path fill="#29b6f6" d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z" /><path fill="#fff" d="M34,15l-3.7,19.1c0,0-0.2,0.9-1.2,0.9c-0.6,0-0.9-0.3-0.9-0.3L20,28l-4-2l-5.1-1.4c0,0-0.9-0.3-0.9-1\tc0-0.6,0.9-0.9,0.9-0.9l21.3-8.5c0,0,0.7-0.2,1.1-0.2c0.3,0,0.6,0.1,0.6,0.5C34,14.8,34,15,34,15z" /><path fill="#b0bec5" d="M23,30.5l-3.4,3.4c0,0-0.1,0.1-0.3,0.1c-0.1,0-0.1,0-0.2,0l1-6L23,30.5z" /><path fill="#cfd8dc" d="M29.9,18.2c-0.2-0.2-0.5-0.3-0.7-0.1L16,26c0,0,2.1,5.9,2.4,6.9c0.3,1,0.6,1,0.6,1l1-6l9.8-9.1\tC30,18.7,30.1,18.4,29.9,18.2z" />
-                    </svg>
-                    Buyurtma
-                </button>
+            <a href="#" className="raise p-2 px-4 capitalize flex items-center linkbtn">
+                <svg className='me-2 w-6 h-6' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                    <path fill="#29b6f6" d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z" /><path fill="#fff" d="M34,15l-3.7,19.1c0,0-0.2,0.9-1.2,0.9c-0.6,0-0.9-0.3-0.9-0.3L20,28l-4-2l-5.1-1.4c0,0-0.9-0.3-0.9-1\tc0-0.6,0.9-0.9,0.9-0.9l21.3-8.5c0,0,0.7-0.2,1.1-0.2c0.3,0,0.6,0.1,0.6,0.5C34,14.8,34,15,34,15z" /><path fill="#b0bec5" d="M23,30.5l-3.4,3.4c0,0-0.1,0.1-0.3,0.1c-0.1,0-0.1,0-0.2,0l1-6L23,30.5z" /><path fill="#cfd8dc" d="M29.9,18.2c-0.2-0.2-0.5-0.3-0.7-0.1L16,26c0,0,2.1,5.9,2.4,6.9c0.3,1,0.6,1,0.6,1l1-6l9.8-9.1\tC30,18.7,30.1,18.4,29.9,18.2z" />
+                </svg>
+                <span>buyurtma berish</span>
             </a>
         )
     }
@@ -72,14 +70,14 @@ const App = () => {
     const styles = {
         videoBox: "flex items-center justify-center md:items-end h-[400px] md:h-[400px] md:h-[380px]",
         infoCard: 'flex flex-col-reverse md:flex-row box bg-white/30 backdrop-blur-md justify-between basis-auto md:basis-[48%] mt-[3rem] relative gap-2',
-        video: 'rounded-xl max-w-[300px] h-auto',
+        video: 'rounded-xl max-w-[300px] h-auto z-20',
         cardInfo: 'w-full md:w-1/2 text-base  flex flex-col gap-2 sm:gap-1 justify-between py-4 p-2 text-justify',
-        infoBtnBox: 'w-100 flex justify-between mt-2'
+        infoBtnBox: 'w-100 flex justify-end items-center mt-2'
     }
     return (
         <section className='w-full border-t-2 border-t-slate-300' id='allproduct'>
-            <main className='max-w-[1400px] mx-auto w-full pt-20'>
-                <h1 className='text-2xl md:text-3xl text-center text-white w-4/5 md:text-left font-bold p-3 md:p-5'> {text.map((el, i) => (
+            <main className='max-w-[1400px]  pt-20 w-[95%] mx-auto'>
+                <h1 className='text-2xl md:text-3xl text-center  text-white w-4/5 md:text-left font-bold p-3 md:p-5'> {text.map((el, i) => (
                     <motion.span
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -92,49 +90,53 @@ const App = () => {
                         {el}{" "}
                     </motion.span>
                 ))}</h1>
-                <div ref={el} className='flex gap-[4%] flex-col items-center md:flex-row flex-wrap text-white text-xl font-semibold p-3 md:p-5 w-[95%] mx-auto'>
-                    <div className='flex flex-col-reverse md:flex-row box bg-white/30 backdrop-blur-md justify-between basis-auto md:basis-[100%] mt-[3rem] relative gap-2' >
-                        <div className={videoID == 1 ? "gradient absolute" : "absolute"} />
-                        <div className='w-full md:w-2/3 text-xl  flex flex-col gap-2 sm:gap-1 justify-between py-4 p-2 text-justify'>
+                <div ref={el} className='flex gap-[4%] flex-col items-center md:flex-row flex-wrap text-white text-xl font-semibold p-3 md:p-5'>
+                    <div className='flex flex-col-reverse md:flex-row box bg-black/60 backdrop-blur-md justify-between basis-auto md:basis-[100%] mt-[3rem] relative gap-2' >
+                        <div className='w-full md:w-1/2 lg:w-2/3 text-xl  flex flex-col gap-2 sm:gap-1 justify-between py-4 p-2 text-justify'>
                             <div className='flex flex-col gap-3'>
                                 <div className='border-b-2 py-2'>
                                     <h3>
-                                        VideoMaker Type 1-Ushbu paketimizda siz o'zingizning biror maxsulotingizni commericial reklama qildirishingiz mumkin.
+                                        <b>VideoMaker Type 1</b>- Ushbu paketimizda siz o'zingizning biror maxsulotingizni commericial reklama qildirishingiz mumkin.
                                         Bu tarifimizga ham videoga olish va mantaj qilish kiradi. Ishlatilinadigan texnikalar Camera Sony a7 III maxsulotdan
                                         kelib chiqib turli xil obyektiv va led chiroqlar ishlatilinadi
                                     </h3>
                                 </div>
-                                    <ul className='flex gap-2'>
-                                        <li className='pr-2 border-r-2'>
-                                            <ul>
-                                                <li>Video uzunligi maximum 1 min</li>
-                                                <li>Format 4K</li>
-                                                <li>Dizayn PSD mijoz tomonidan taqdim etilsa 35$</li>
-                                                <li>Price 1ta video 34.9$</li>
-                                                <li>10 ta video 29.9$ dan</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <ul>
-                                                <li>
-                                                    Dizayn 0 dan tayyorlansa 70$
-                                                </li>
-                                                <li>
-                                                    Price 1ta video 69.9$
-                                                </li>
-                                                <li>
-                                                    10 ta video 59.9$ dan
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                <ul className='flex gap-2 text-base'>
+                                    <li className='pr-2 w-1/2'>
+                                        <ul>
+                                            <li>Video haqida</li>
+                                            <li>- 60 soniyagacha </li>
+                                            <li>- Format 4K</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                Dizayn 0 dan tayyorlansa
+                                            </li>
+                                            <li>
+                                                - <span className='text-red-500'>1 ta video 69.9$ </span>
+                                            </li>
+                                            <li>
+                                                - <span className='text-green-500'>10 ta video 59.9$ dan </span>
+                                            </li>
+                                            <li>Dizayn PSD mijoz tomonidan taqdim etilsa</li>
+                                            <li>
+                                                - <span className='text-red-500'>1 ta video 34.9$</span>
+                                            </li>
+                                            <li>
+                                                - <span className='text-green-500'>10 ta video 29.9$ dan </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
-                            <div className={styles.infoBtnBox}>
-                                {/* <button>49$</button> */}
+                            <div className='w-[100%] flex justify-center md:justify-start items-center mt-2'>
                                 <LinkButton />
                             </div>
                         </div>
-                        <div className='w-full md:w-1/3 flex items-center justify-center md:items-end h-[400px] md:h-[400px]'>
+                        <div className='w-full md:w-1/2 lg:w-1/3 flex items-center justify-center md:items-end h-[400px] md:h-[400px]'>
+                            <div className={videoID == 1 ? "gradient absolute" : "absolute"} />
                             <video
                                 ref={videoRefs[0]}
                                 controls
@@ -142,7 +144,9 @@ const App = () => {
                                 onPause={() => handlePause(0)}
                                 onEnded={() => handleVideoEnd(0)}
                                 className={styles.video}
+                                poster={moviz1}
                             >
+                                
                                 <source src={video1} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
@@ -165,7 +169,7 @@ const App = () => {
                                     Video Type : <span>SMD post animation</span>
                                 </h3>
                             </div>
-                            <div className={styles.infoBtnBox}>
+                            <div className='w-[100%] flex justify-end items-center  bg-black'>
                                 <button>49$</button>
                                 <LinkButton />
                             </div>

@@ -1,0 +1,19 @@
+
+.raise:hover, .raise:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #29B6F6;
+    transform: translateY(-0.25em);
+}
+
+.linkbtn {
+    color: #fff;
+    transition: 0.25s;
+}
+.linkbtn:hover, .linkbtn:focus {
+    border-color: #29B6F6;
+    color: #fff;
+}
+
+.linkbtn {
+    background: none;
+    border: 2px solid;
+}
