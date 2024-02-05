@@ -72,6 +72,7 @@ section {
 ul > li > ul li {
   border-bottom: 1px solid #233248;
   padding: 4px 0;
+  width: 100%;
 }
 
 .lines {
