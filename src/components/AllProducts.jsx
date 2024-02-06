@@ -295,10 +295,10 @@ const App = () => {
                                 onPause={() => handlePause(3)}
                                 onEnded={() => handleVideoEnd(3)}
                                 className={styles.video}
-                                poster='https://moviz-files.netlify.app/5.png'
+                                poster='https://transcendent-zuccutto-b1b141.netlify.app/1.png'
                             >
 
-                                <source src={video1} type="video/mp4" />
+                                <source src="https://transcendent-zuccutto-b1b141.netlify.app/1.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
