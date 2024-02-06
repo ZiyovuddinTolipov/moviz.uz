@@ -158,4 +158,7 @@ video[poster] {
     border-radius:20px;
 }
 
-.about_links {cursor: url(assets/instagram.cur),auto;}
+.about-img {
+    filter: drop-shadow(0 0 0.75rem rgba(2, 9, 70, 0.747));
+}
+

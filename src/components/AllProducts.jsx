@@ -63,7 +63,7 @@ const App = () => {
     useEffect(() => {
         gsap.fromTo(elInner('.box'),
             { opacity: 0, scale: 0.5 },
-            { opacity: 1, scale: 1, duration: 1, repeat: 0, yoyo: true, stagger: 1 })
+            { opacity: 1, scale: 1, duration: 0, repeat: 0, yoyo: true, stagger: 1 })
     }, [])
     const styles = {
         videoBox: "flex items-center justify-center md:items-end h-[400px] md:h-[400px] md:h-[380px]",
@@ -133,10 +133,10 @@ const App = () => {
                                 onPause={() => handlePause(0)}
                                 onEnded={() => handleVideoEnd(0)}
                                 className={styles.video}
-                                // poster='https://moviz-files.netlify.app/3.png'
+                                poster='https://moviz-files.netlify.app/3.png'
                             >
 
-                                <source src={video1} type="video/mp4" />
+                                <source src="https://moviz-videos.netlify.app/4.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -185,10 +185,10 @@ const App = () => {
                                 onPause={() => handlePause(1)}
                                 onEnded={() => handleVideoEnd(1)}
                                 className={styles.video}
-                                // poster='https://moviz-files.netlify.app/2.png'
+                                poster='https://moviz-files.netlify.app/2.png'
                             >
 
-                                <source src={video1} type="video/mp4" />
+                                <source src="https://moviz-videos.netlify.app/5.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -239,10 +239,10 @@ const App = () => {
                                 onPause={() => handlePause(2)}
                                 onEnded={() => handleVideoEnd(2)}
                                 className={styles.video}
-                                // poster='https://moviz-files.netlify.app/4.png'
+                                poster='https://moviz-files.netlify.app/4.png'
                             >
 
-                                <source src={video1} type="video/mp4" />
+                                <source src="https://moviz-videos.netlify.app/3.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -295,7 +295,7 @@ const App = () => {
                                 onPause={() => handlePause(3)}
                                 onEnded={() => handleVideoEnd(3)}
                                 className={styles.video}
-                                // poster='https://moviz-files.netlify.app/5.png'
+                                poster='https://moviz-files.netlify.app/5.png'
                             >
 
                                 <source src={video1} type="video/mp4" />
@@ -351,10 +351,10 @@ const App = () => {
                                 onPause={() => handlePause(4)}
                                 onEnded={() => handleVideoEnd(4)}
                                 className={styles.video}
-                                // poster='https://moviz-files.netlify.app/1.png'
+                                poster='https://moviz-files.netlify.app/1.png'
                             >
 
-                                <source src={video1} type="video/mp4" />
+                                <source src='https://moviz-videos.netlify.app/2.mp4' type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -411,10 +411,10 @@ const App = () => {
                                 onPause={() => handlePause(5)}
                                 onEnded={() => handleVideoEnd(5)}
                                 className={styles.video}
-                                // poster='https://moviz-files.netlify.app/6.png'
+                                poster='https://moviz-files.netlify.app/6.png'
                             >
 
-                                <source src={video1} type="video/mp4" />
+                                <source src='https://moviz-videos.netlify.app/1.mp4' type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
