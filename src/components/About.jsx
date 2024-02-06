@@ -13,13 +13,13 @@ const About = () => {
             <main className='max-w-[1400px]  pt-20 w-[95%] mx-auto  flex flex-col-reverse justify-start md:flex-row'>
                 <div className="w-full md:w-1/2 text-white flex flex-col gap-3">
                     <div className='text-xl about_links'>
-                            <h3>Yo'ldoshboyev Tolibjon Nurullayevich.</h3>
-                            <h3>7 yillik tajriba.</h3>
-                            <h3>500+ Mijozlar</h3>
+                        <h3>Yo'ldoshboyev Tolibjon Nurullayevich.</h3>
+                        <h3>7 yillik tajriba.</h3>
+                        <h3>600+ Mijozlar</h3>
                     </div>
                     {/* skills */}
                     <div className='flex gap-4 about_links'>
-                        <div className="radial-progress text-green-500" style={{ "--value": 70 }} role="progressbar" title='Adobe Premiere pro 90%'>
+                        <div className="radial-progress text-green-500" style={{ "--value": 90 }} role="progressbar" title='Adobe Premiere pro 90%'>
                             <img src={AdobeP} alt="AdobeP" className='h-10 w-10 rounded-full' />
                         </div>
                         <div className="radial-progress text-green-500" style={{ "--value": 60 }} role="progressbar" title='Adobe Photoshop 60%'>
@@ -27,7 +27,7 @@ const About = () => {
                         </div>
                         <div className="radial-progress text-blue-500" style={{ "--value": 50 }} role="progressbar" title='After Effect 50%'>
                             <img src={AdobeAfterEffect} alt="AdobeAfterEffect" className='h-10 w-10 rounded-full' />
-                        </div> 
+                        </div>
                         <div className="radial-progress text-green-500" style={{ "--value": 90 }} role="progressbar" title='CapCut 90%'>
                             <img src={CapCut} alt="CapCut" className='h-10 w-10 rounded-full' />
                         </div>
