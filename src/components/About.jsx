@@ -19,23 +19,23 @@ const About = () => {
                     </div>
                     {/* skills */}
                     <div className='flex gap-4 about_links'>
-                        <div className="radial-progress text-green-500 about_links" style={{ "--value": 70 }} role="progressbar" title='Adobe Premiere pro 90%'>
-                            <img src={AdobeP} alt="" className='h-10 w-10 rounded-full' />
+                        <div className="radial-progress text-green-500" style={{ "--value": 70 }} role="progressbar" title='Adobe Premiere pro 90%'>
+                            <img src={AdobeP} alt="AdobeP" className='h-10 w-10 rounded-full' />
                         </div>
-                        <div className="radial-progress text-green-500" style={{ "--value": 60 }} role="progressbar">
-                            <img src={PhotoshopIcon} alt="" className='h-10 w-10 rounded-full' />
+                        <div className="radial-progress text-green-500" style={{ "--value": 60 }} role="progressbar" title='Adobe Photoshop 60%'>
+                            <img src={PhotoshopIcon} alt="PhotoshopIcon" className='h-10 w-10 rounded-full' />
                         </div>
-                        <div className="radial-progress text-blue-500" style={{ "--value": 50 }} role="progressbar">
-                            <img src={AdobeAfterEffect} alt="" className='h-10 w-10 rounded-full' />
+                        <div className="radial-progress text-blue-500" style={{ "--value": 50 }} role="progressbar" title='After Effect 50%'>
+                            <img src={AdobeAfterEffect} alt="AdobeAfterEffect" className='h-10 w-10 rounded-full' />
                         </div> 
-                        <div className="radial-progress text-green-500" style={{ "--value": 90 }} role="progressbar">
-                            <img src={CapCut} alt="" className='h-10 w-10 rounded-full' />
+                        <div className="radial-progress text-green-500" style={{ "--value": 90 }} role="progressbar" title='CapCut 90%'>
+                            <img src={CapCut} alt="CapCut" className='h-10 w-10 rounded-full' />
                         </div>
-                        <div className="radial-progress text-green-500" style={{ "--value": 70 }} role="progressbar">
-                            <img src={vnicon} alt="" className='h-10 w-10 rounded-full' />
+                        <div className="radial-progress text-green-500" style={{ "--value": 70 }} role="progressbar" title='Vn 70%'>
+                            <img src={vnicon} alt="vnicon" className='h-10 w-10 rounded-full' />
                         </div>
-                        <div className="radial-progress text-blue-500" style={{ "--value": 40 }} role="progressbar">
-                            <img src={Davenci} alt="" className='h-10 w-10 rounded-full' />
+                        <div className="radial-progress text-blue-500" style={{ "--value": 40 }} role="progressbar" title='Davenci Resolver 40%'>
+                            <img src={Davenci} alt="Davenci" className='h-10 w-10 rounded-full' />
                         </div>
                     </div>
                 </div>
