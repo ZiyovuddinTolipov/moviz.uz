@@ -198,7 +198,7 @@ const App = () => {
                             <div className='flex flex-col gap-3'>
                                 <div className='border-b-2 border-b-slate-800 py-2'>
                                     <h3>
-                                        <span className='font-[800]'>VideoMaker Type 1</span> - Ushbu paketimizda siz o‘zingizning biror mahsulotingizni comericial reklama qildirishingiz mumkin. Bu tarifimizga ham videoga olish va montaj qilish kiradi. Ishlatiladigan texnikalar Samera Sony a7 III mahsulotdan kelib chiqib turli xil obyektiv va led chiroqlar ishlatiladi.
+                                        <span className='font-[800]'>VideoMaker Type 1</span> - Ushbu paketimizda siz o‘zingizning biror mahsulotingizni comericial reklama qildirishingiz mumkin. Bu tarifimizga ham videoga olish va montaj qilish kiradi. Texnikalar Camera Sony a7 III mahsulotdan kelib chiqib turli xil obyektiv va led chiroqlar ishlatiladi.
                                     </h3>
                                 </div>
                                 <ul className='flex gap-2 text-base flex-col md:flex-row'>
