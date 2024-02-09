@@ -13,3 +13,45 @@
     background: linear-gradient(to bottom, #7091f5 40%, #000000 50%);
     filter: blur(50px);
 }
+
+
+.range {
+    position: relative;
+    background-color: #f5f0f0 !important;
+    width: 300px !important;
+    height: 16px !important;
+    // transform: skew(30deg);
+    border-radius: 0 !important;
+    font-family: "Orbitron", monospace;
+    &:before {
+        --width: calc(var(--p) * 1%);
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 16px;
+        background-color: #4838d8;
+        z-index: 0;
+        animation:
+            load 0.5s forwards linear;
+    }
+
+    // &:after {
+    //     counter-reset: progress var(--p);
+    //     content: counter(progress) "%";
+    //     color: #000;
+    //     position: absolute;
+    //     left: 5%;
+    //     top: 50%;
+    //     transform: translateY(-50%) skewX(-30deg);
+    //     z-index: 1;
+    // }
+}
+
+@keyframes load {
+    to {
+        width: var(--width);
+    }
+}
+
