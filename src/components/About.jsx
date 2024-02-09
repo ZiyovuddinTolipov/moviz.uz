@@ -104,7 +104,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="w-full md:w-1/2 flex items-end justify-center h-[300px] md:h-[600px]">
-                    <img src={avatar} alt="img" className='w-[200px] md:w-[400px] ' />
+                    <img src={avatar} alt="img" className='w-[300px] md:w-[400px] max-w-full' />
                 </div>
             </main>
         </section >

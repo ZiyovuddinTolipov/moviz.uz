@@ -54,7 +54,7 @@ export default function NavBar() {
                 </div>
                 <div className="w-[100%] md:w-auto">
                     <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 bg-white/10 backdrop-blur-md ${navbar ? "absolute" : "hidden"
                             }`}
                     >
                         <ul className="items-start px-3 justify-start flex flex-col md:flex-row  md:flex md:space-x-6 text-xl font-[500] gap-4">

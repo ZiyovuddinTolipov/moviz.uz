@@ -20,7 +20,7 @@ const App = () => {
     ];
     const LinkButton = () => {
         return (
-            <a href="#" className="raise p-2 px-4 capitalize flex items-center linkbtn">
+            <a href="https://t.me/movizcgbot/" target='_self' className="raise p-2 px-4 capitalize flex items-center linkbtn">
                 <img src={telegramIcon} alt="telegram icon" className='me-2 w-6 h-6' />
                 <span>buyurtma berish</span>
             </a>
