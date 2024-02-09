@@ -56,7 +56,7 @@ const App = () => {
         setVideoID(index + 1);
     };
     console.log(videoID);
-    const text = "Lorem ipsum dolor sit amet, ".split(" ");
+    const text = "Bizning tariflar ! ".split(" ");
     const el = useRef();
     let elInner = gsap.utils.selector(el)
 
@@ -75,7 +75,7 @@ const App = () => {
     return (
         <section className='w-full border-t-2 border-t-slate-300' id='allproduct'>
             <main className='max-w-[1400px]  pt-20 w-[95%] mx-auto'>
-                <h1 className='text-2xl md:text-3xl text-center  text-white w-4/5 md:text-left font-bold p-3 md:p-5'> {text.map((el, i) => (
+                <h1 className='text-2xl md:text-3xl text-center  text-white w-4/5 md:text-left font-bold pt-3 md:p-5'> {text.map((el, i) => (
                     <motion.span
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -88,7 +88,7 @@ const App = () => {
                         {el}{" "}
                     </motion.span>
                 ))}</h1>
-                <div ref={el} className='flex gap-[4%] flex-col items-center md:flex-row flex-wrap text-white text-xl font-semibold p-3 md:p-5'>
+                <div ref={el} className='flex gap-[4%] flex-col items-center md:flex-row flex-wrap text-white text-xl font-semibold p-3 pt-0 md:pt-0 md:p-5'>
                     <div className={styles.infoCard} >
                         <div className='w-full md:w-1/2 lg:w-2/3 text-base md:text-xl  flex flex-col gap-2 sm:gap-1 justify-between py-4 p-2 text-left'>
                             <div className='flex flex-col gap-3'>
@@ -297,7 +297,6 @@ const App = () => {
                                 className={styles.video}
                                 poster='https://transcendent-zuccutto-b1b141.netlify.app/1.png'
                             >
-
                                 <source src="https://transcendent-zuccutto-b1b141.netlify.app/1.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
