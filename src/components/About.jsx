@@ -5,44 +5,88 @@ import AdobeAfterEffect from '../assets/AdobeAftereffect.png';
 import CapCut from '../assets/CapCut.png';
 import vnicon from '../assets/Vn.png';
 import Davenci from '../assets/DavenciResolver.png';
-
+import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 const About = () => {
+    const percentage = 10;
     return (
         <section className='w-full border-t-2 border-t-slate-300 pb-4' id='about'>
             <main className='max-w-[1400px] pt-24 mt-5 w-[90%] mx-auto  flex flex-col-reverse justify-center md:flex-row min-h-screen'>
                 <div className="w-full md:w-1/2 text-white flex flex-col gap-5 h-[600px] justify-end">
-                    <h1 className='text-8xl font-bold'>Moviz.CG</h1>
+                    <div className="circle rounded-full absolute " />
+                    <h1 className='text-6xl font-bold'>Moviz.CG</h1>
 
-                    <div className='flex flex-col gap-3 '>
-                        <h3 className='text-4xl font-bold'><span className='text-green-500'>8+</span> yillik tajriba.</h3>
-                        <h3 className='font-bold text-3xl'><span className='text-green-500'>600+</span> Mijozlar</h3>
-                        <h3 className='text-3xl font-[700]'>Yo'ldoshboyev  Tolibjon Nurullayevich.</h3>
+                    <div className='flex flex-col gap-3 relative z-10'>
+                        <div className="circle2 rounded-full absolute z-[-1]" />
+                        <h3 className='text-2xl font-bold'><span className='text-green-500'>8+</span> yillik tajriba.</h3>
+                        <h3 className='font-bold text-2xl'><span className='text-green-500'>600+</span> Mijozlar</h3>
+                        <h3 className='text-2xl font-[700]'>Yo'ldoshboyev  Tolibjon Nurullayevich.</h3>
                     </div>
                     {/* skills */}
-                    <div className='flex gap-4  about_links mt-10'>
+                    <div className='flex about_links mt-10'>
                         <div className='flex gap-3'>
-                            <div className="radial-progress text-green-500" style={{ "--value": 90 }} role="progressbar" title='Adobe Premiere pro 90%'>
-                                <img src={AdobeP} alt="AdobeP" className='h-10 w-10 rounded-full' />
+                            <div className='w-[100px] '>
+                                <div className='w-[70px] mx-auto'>
+                                    <CircularProgressbarWithChildren value={66}>
+                                        <img src={AdobeP} alt="icon" className='h-10 w-10 rounded-full' />
+                                    </CircularProgressbarWithChildren>
+                                </div>
+                                <div className='text-center text-[.9rem]'>
+                                    Adobe Premiere pro
+                                </div>
                             </div>
-                            <div className="radial-progress text-green-500" style={{ "--value": 60 }} role="progressbar" title='Adobe Photoshop 60%'>
-                                <img src={PhotoshopIcon} alt="PhotoshopIcon" className='h-10 w-10 rounded-full' />
-                                
-                                {/* 90% */}
+                            <div className='w-[100px] '>
+                                <div className='w-[70px] mx-auto'>
+                                    <CircularProgressbarWithChildren value={90}>
+                                        <img src={PhotoshopIcon} alt="icon" className='h-10 w-10 rounded-full' />
+                                    </CircularProgressbarWithChildren>
+                                </div>
+                                <div className='text-center text-[.9rem]'>
+                                    Adobe  Photoshop
+                                </div>
                             </div>
-                            <div className="radial-progress text-blue-500" style={{ "--value": 50 }} role="progressbar" title='After Effect 50%'>
-                                <img src={AdobeAfterEffect} alt="AdobeAfterEffect" className='h-10 w-10 rounded-full' />
+                            <div className='w-[100px] '>
+                                <div className='w-[70px] mx-auto'>
+                                    <CircularProgressbarWithChildren value={60}>
+                                        <img src={AdobeAfterEffect} alt="icon" className='h-10 w-10 rounded-full' />
+                                    </CircularProgressbarWithChildren>
+                                </div>
+                                <div className='text-center text-[.9rem]'>
+                                    Adobe After Effect
+                                </div>
                             </div>
                         </div>
                         <div className='flex gap-3'>
-                            <div className="radial-progress text-green-500" style={{ "--value": 90 }} role="progressbar" title='CapCut 90%'>
-                                <img src={CapCut} alt="CapCut" className='h-10 w-10 rounded-full' />
+                            <div className='w-[100px] '>
+                                <div className='w-[70px] mx-auto'>
+                                    <CircularProgressbarWithChildren value={90}>
+                                        <img src={CapCut} alt="icon" className='h-10 w-10 rounded-full' />
+                                    </CircularProgressbarWithChildren>
+                                </div>
+                                <div className='text-center text-[.9rem]'>
+                                    Cap Cut
+                                </div>
                             </div>
-                            <div className="radial-progress text-green-500" style={{ "--value": 70 }} role="progressbar" title='Vn 70%'>
-                                <img src={vnicon} alt="vnicon" className='h-10 w-10 rounded-full' />
+                            <div className='w-[100px] '>
+                                <div className='w-[70px] mx-auto'>
+                                    <CircularProgressbarWithChildren value={70}>
+                                        <img src={vnicon} alt="icon" className='h-10 w-10 rounded-full' />
+                                    </CircularProgressbarWithChildren>
+                                </div>
+                                <div className='text-center text-[.9rem]'>
+                                Vn
+                                </div>
                             </div>
-                            <div className="radial-progress text-blue-500" style={{ "--value": 40 }} role="progressbar" title='Davenci Resolver 40%'>
-                                <img src={Davenci} alt="Davenci" className='h-10 w-10 rounded-full' />
+                            <div className='w-[100px] '>
+                                <div className='w-[70px] mx-auto'>
+                                    <CircularProgressbarWithChildren value={45}>
+                                        <img src={Davenci} alt="icon" className='h-10 w-10 rounded-full' />
+                                    </CircularProgressbarWithChildren>
+                                </div>
+                                <div className='text-center text-[.9rem]'>
+                                Davenci Resolver
+                                </div>
                             </div>
                         </div>
                     </div>

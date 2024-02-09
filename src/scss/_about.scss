@@ -1,0 +1,15 @@
+.circle {
+    width: 150px;
+    height: 250px;
+    bottom: 0px;
+    left: -100px;
+    background: linear-gradient(to bottom, #0077b5 40%, #131b27 50%);
+    filter: blur(50px);
+}
+.circle2 {
+    width: 150px;
+    height: 150px;
+    right: 100px;
+    background: linear-gradient(to bottom, #7091f5 40%, #000000 50%);
+    filter: blur(50px);
+}
