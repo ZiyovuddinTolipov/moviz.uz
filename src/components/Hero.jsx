@@ -19,7 +19,7 @@ const Hero = () => {
                     </motion.span>
                 ))}
             </h2>
-            <div className="lines absolute">
+            <div className="lines absolute z-0">
                 <div className="line" />
                 <div className="line" />
                 <div className="line" />
