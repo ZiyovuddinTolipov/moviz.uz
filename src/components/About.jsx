@@ -9,14 +9,12 @@ import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 const About = () => {
-    const percentage = 10;
     return (
         <section className='w-full border-t-2 border-t-slate-300 pb-4' id='about'>
             <main className='max-w-[1400px] pt-24 mt-5 w-[90%] mx-auto  flex flex-col-reverse justify-center md:flex-row min-h-screen'>
                 <div className="w-full md:w-1/2 text-white flex flex-col gap-5 h-[600px] justify-end">
                     <div className="circle rounded-full absolute " />
-                    <h1 className='text-6xl font-bold'>Moviz.CG</h1>
-
+                    <h1 className='text-6xl font-bold'>Moviz.Cg</h1>
                     <div className='flex flex-col gap-3 relative z-10'>
                         <div className="circle2 rounded-full absolute z-[-1]" />
                         <h3 className='text-2xl font-bold'><span className='text-green-500'>8+</span> yillik tajriba.</h3>
@@ -28,21 +26,21 @@ const About = () => {
                         <div className='flex gap-3'>
                             <div className='w-[100px] '>
                                 <div className='w-[70px] mx-auto'>
-                                    <CircularProgressbarWithChildren value={66}>
+                                    <CircularProgressbarWithChildren value={90}>
                                         <img src={AdobeP} alt="icon" className='h-10 w-10 rounded-full' />
                                     </CircularProgressbarWithChildren>
                                 </div>
-                                <div className='text-center text-[.9rem]'>
+                                <div className='text-center text-[.9rem] mt-1'>
                                     Adobe Premiere pro
                                 </div>
                             </div>
                             <div className='w-[100px] '>
                                 <div className='w-[70px] mx-auto'>
-                                    <CircularProgressbarWithChildren value={90}>
+                                    <CircularProgressbarWithChildren value={66}>
                                         <img src={PhotoshopIcon} alt="icon" className='h-10 w-10 rounded-full' />
                                     </CircularProgressbarWithChildren>
                                 </div>
-                                <div className='text-center text-[.9rem]'>
+                                <div className='text-center text-[.9rem] mt-1'>
                                     Adobe  Photoshop
                                 </div>
                             </div>
@@ -52,7 +50,7 @@ const About = () => {
                                         <img src={AdobeAfterEffect} alt="icon" className='h-10 w-10 rounded-full' />
                                     </CircularProgressbarWithChildren>
                                 </div>
-                                <div className='text-center text-[.9rem]'>
+                                <div className='text-center text-[.9rem] mt-1'>
                                     Adobe After Effect
                                 </div>
                             </div>
@@ -64,7 +62,7 @@ const About = () => {
                                         <img src={CapCut} alt="icon" className='h-10 w-10 rounded-full' />
                                     </CircularProgressbarWithChildren>
                                 </div>
-                                <div className='text-center text-[.9rem]'>
+                                <div className='text-center text-[.9rem] mt-1'>
                                     Cap Cut
                                 </div>
                             </div>
@@ -74,7 +72,7 @@ const About = () => {
                                         <img src={vnicon} alt="icon" className='h-10 w-10 rounded-full' />
                                     </CircularProgressbarWithChildren>
                                 </div>
-                                <div className='text-center text-[.9rem]'>
+                                <div className='text-center text-[.9rem] mt-1'>
                                 Vn
                                 </div>
                             </div>
@@ -84,7 +82,7 @@ const About = () => {
                                         <img src={Davenci} alt="icon" className='h-10 w-10 rounded-full' />
                                     </CircularProgressbarWithChildren>
                                 </div>
-                                <div className='text-center text-[.9rem]'>
+                                <div className='text-center text-[.9rem] mt-1'>
                                 Davenci Resolver
                                 </div>
                             </div>

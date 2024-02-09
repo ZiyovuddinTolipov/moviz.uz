@@ -111,10 +111,10 @@ const App = () => {
                                                 Narxlar
                                             </li>
                                             <li>
-                                                - <span className='text-red-500'>1 ta video 29.9$ </span>
+                                                - <span className='text-red-500'>1 ta video 39.9$ </span>
                                             </li>
                                             <li>
-                                                - <span className='text-green-500'>10 ta video 24.9$ dan </span>
+                                                - <span className='text-green-500'>10 ta video 34.9$ dan </span>
                                             </li>
                                         </ul>
                                     </li>
@@ -163,10 +163,10 @@ const App = () => {
                                                 Narxlar
                                             </li>
                                             <li>
-                                                - <span className='text-red-500'>1 ta video 49.9$ </span>
+                                                - <span className='text-red-500'>1 ta video 59.9$ </span>
                                             </li>
                                             <li>
-                                                - <span className='text-green-500'>10 ta video 44.9$ dan </span>
+                                                - <span className='text-green-500'>10 ta video 54.9$ dan </span>
                                             </li>
                                         </ul>
                                     </li>
@@ -216,10 +216,10 @@ const App = () => {
                                                 Narxlar
                                             </li>
                                             <li>
-                                                - <span className='text-red-500'>1 ta video 69.9$ </span>
+                                                - <span className='text-red-500'>1 ta video 79.9$ </span>
                                             </li>
                                             <li>
-                                                - <span className='text-green-500'>10 ta video 59.9$ dan </span>
+                                                - <span className='text-green-500'>10 ta video 69.9$ dan </span>
                                             </li>
 
                                         </ul>
@@ -273,10 +273,10 @@ const App = () => {
                                                 Narxlar
                                             </li>
                                             <li>
-                                                - <span className='text-red-500'>1 ta video 99.9$ </span>
+                                                - <span className='text-red-500'>1 ta video 109.9$ </span>
                                             </li>
                                             <li>
-                                                - <span className='text-green-500'>10 ta video 69.9$ dan </span>
+                                                - <span className='text-green-500'>10 ta video 79.9$ dan </span>
                                             </li>
                                         </ul>
                                     </li>
@@ -327,10 +327,10 @@ const App = () => {
                                                 Narxlar
                                             </li>
                                             <li>
-                                                - <span className='text-red-500'>1 ta video 69.9$ </span>
+                                                - <span className='text-red-500'>1 ta video 79.9$ </span>
                                             </li>
                                             <li>
-                                                - <span className='text-green-500'>10 ta video 59.9$ dan </span>
+                                                - <span className='text-green-500'>10 ta video 69.9$ dan </span>
                                             </li>
 
                                         </ul>
@@ -381,17 +381,17 @@ const App = () => {
                                                 Dizayn 0 dan tayyorlansa
                                             </li>
                                             <li>
-                                                - <span className='text-red-500'>1 ta video 69.9$ </span>
+                                                - <span className='text-red-500'>1 ta video 79.9$ </span>
                                             </li>
                                             <li>
-                                                - <span className='text-green-500'>10 ta video 59.9$ dan </span>
+                                                - <span className='text-green-500'>10 ta video 69.9$ dan </span>
                                             </li>
                                             <li>Dizayn PSD mijoz tomonidan taqdim etilsa</li>
                                             <li>
-                                                - <span className='text-red-500'>1 ta video 34.9$</span>
+                                                - <span className='text-red-500'>1 ta video 44.9$</span>
                                             </li>
                                             <li>
-                                                - <span className='text-green-500'>10 ta video 29.9$ dan </span>
+                                                - <span className='text-green-500'>10 ta video 39.9$ dan </span>
                                             </li>
                                         </ul>
                                     </li>
