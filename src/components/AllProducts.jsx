@@ -66,11 +66,11 @@ const App = () => {
             { opacity: 1, scale: 1, duration: 0, repeat: 0, yoyo: true, stagger: 1 })
     }, [])
     const styles = {
-        videoBox: "flex items-center justify-center md:items-end h-[400px] md:h-[400px] md:h-[380px]",
+        videoBox: "flex items-center justify-center md:items-end h-[400px] md:h-[400px] md:h-[380px] pt-5 mt-5",
         infoCard: 'flex flex-col-reverse md:flex-row box bg-black/60 backdrop-blur-md justify-between basis-auto md:basis-[100%] mt-[3rem] relative gap-2',
-        video: 'rounded-xl max-w-[300px] h-auto z-20',
+        video: 'rounded-xl max-w-[300px] h-auto z-20 ',
         cardInfo: 'w-full md:w-1/2 text-base  flex flex-col gap-2 sm:gap-1 justify-between py-4 p-2 text-justify',
-        infoBtnBox: 'w-100 flex justify-end items-center mt-2'
+        infoBtnBox: 'w-100 flex justify-end items-center '
     }
     return (
         <section className='w-full border-t-2 border-t-slate-300' id='allproduct'>
@@ -124,7 +124,7 @@ const App = () => {
                                 <LinkButton />
                             </div>
                         </div>
-                        <div className='w-full md:w-1/2 lg:w-1/3 flex items-center justify-center md:items-end h-[400px] md:h-[400px]'>
+                        <div className='w-full md:w-1/2 lg:w-1/3 flex items-center justify-center md:items-end h-[400px] md:h-[400px] mt-5'>
                             <div className={videoID == 1 ? "gradient absolute" : "absolute"} />
                             <video
                                 ref={videoRefs[0]}
@@ -176,7 +176,7 @@ const App = () => {
                                 <LinkButton />
                             </div>
                         </div>
-                        <div className='w-full md:w-1/2 lg:w-1/3 flex items-center justify-center md:items-end h-[400px] md:h-[400px]'>
+                        <div className='w-full md:w-1/2 lg:w-1/3 flex items-center justify-center md:items-end h-[400px] md:h-[400px] mt-5'>
                             <div className={videoID == 2 ? "gradient absolute" : "absolute"} />
                             <video
                                 ref={videoRefs[1]}
@@ -230,7 +230,7 @@ const App = () => {
                                 <LinkButton />
                             </div>
                         </div>
-                        <div className='w-full md:w-1/2 lg:w-1/3 flex items-center justify-center md:items-end h-[400px] md:h-[400px]'>
+                        <div className='w-full md:w-1/2 lg:w-1/3 flex items-center justify-center md:items-end h-[400px] md:h-[400px] mt-5'>
                             <div className={videoID == 3 ? "gradient absolute" : "absolute"} />
                             <video
                                 ref={videoRefs[2]}
@@ -286,7 +286,7 @@ const App = () => {
                                 <LinkButton />
                             </div>
                         </div>
-                        <div className='w-full md:w-1/2 lg:w-1/3 flex items-center justify-center md:items-end h-[400px] md:h-[400px]'>
+                        <div className='w-full md:w-1/2 lg:w-1/3 flex items-center justify-center md:items-end h-[400px] md:h-[400px] mt-5'>
                             <div className={videoID == 4 ? "gradient absolute" : "absolute"} />
                             <video
                                 ref={videoRefs[0]}
@@ -341,7 +341,7 @@ const App = () => {
                                 <LinkButton />
                             </div>
                         </div>
-                        <div className='w-full md:w-1/2 lg:w-1/3 flex items-center justify-center md:items-end h-[400px] md:h-[400px]'>
+                        <div className='w-full md:w-1/2 lg:w-1/3 flex items-center justify-center md:items-end h-[400px] md:h-[400px] mt-5'>
                             <div className={videoID == 5 ? "gradient absolute" : "absolute"} />
                             <video
                                 ref={videoRefs[4]}
@@ -401,7 +401,7 @@ const App = () => {
                                 <LinkButton />
                             </div>
                         </div>
-                        <div className='w-full md:w-1/2 lg:w-1/3 flex items-center justify-center md:items-end h-[400px] md:h-[400px]'>
+                        <div className='w-full md:w-1/2 lg:w-1/3 flex items-center justify-center md:items-end h-[400px] md:h-[400px] mt-5'>
                             <div className={videoID == 6 ? "gradient absolute" : "absolute"} />
                             <video
                                 ref={videoRefs[5]}
