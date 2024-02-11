@@ -216,10 +216,10 @@ const App = () => {
                                                 Narxlar
                                             </li>
                                             <li>
-                                                - <span className='text-red-500'>1 ta video 79.9$ </span>
+                                                - <span className='text-red-500'>1 ta video 99.9$ </span>
                                             </li>
                                             <li>
-                                                - <span className='text-green-500'>10 ta video 69.9$ dan </span>
+                                                - <span className='text-green-500'>10 ta video 89.9$ dan </span>
                                             </li>
 
                                         </ul>
