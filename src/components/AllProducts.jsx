@@ -371,7 +371,7 @@ const App = () => {
                                     <li className='pr-2 w-full md:w-1/2'>
                                         <ul>
                                             <li>Video haqida</li>
-                                            <li>- 60 soniyagacha </li>
+                                            <li>- 15 soniyagacha </li>
                                             <li>- Format 4K</li>
                                         </ul>
                                     </li>
