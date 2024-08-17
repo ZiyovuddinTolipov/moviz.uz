@@ -1,8 +1,8 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 const VideoPlayer = () => {
     const [isPlaying, setIsPlaying] = useState(false);
-    const videoRefs = Array.from({ length: 4 }, () => useRef(null));
+    const videoRefs = Array.from({ length: 4 }, useRef(null));
 
     const handlePlay = (index) => {
         console.log(`Video ${index + 1} is playing`);

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import avatar from '../assets/moviz.png'
 import AdobeP from '../assets/AdobePremierepro.png'
 import PhotoshopIcon from '../assets/AdobePhotoshop.png';
@@ -11,7 +12,7 @@ import 'react-circular-progressbar/dist/styles.css';
 const About = () => {
     return (
         <section className='w-full border-t-2 border-t-slate-300 pb-4' id='about'>
-            <main className='max-w-[1400px] pt-24 mt-5 w-[90%] mx-auto  flex flex-col-reverse justify-center md:flex-row min-h-screen'>
+            <main className='max-w-[1400px] pt-24 mt-5 w-[90%] mx-auto  flex flex-col-reverse justify-center md:flex-row h-auto md:h-[100svh]'>
                 <div className="w-full md:w-1/2 text-white flex flex-col gap-5 h-[600px] justify-start md:justify-end mt-3 md:mt-0">
                     <div className="circle rounded-full absolute " />
                     <h1 className='text-6xl font-bold'>Moviz.Cg</h1>

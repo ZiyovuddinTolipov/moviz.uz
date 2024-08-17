@@ -6,7 +6,7 @@ export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="absolute z-50 left-0 right-0 py-3 px-5 my-3 top-3  w-full sticky">
+        <nav className=" z-50 left-0 right-0 py-3 px-5 my-3 top-3  w-full fixed">
             <div className="md:justify-between flex  mx-auto  md:items-center flex-col md:flex-row  px-3 md:px-8 max-w-[1400px] bg-white/10 backdrop-blur-md w-[90%] rounded-xl">
                 <div className="w-[100%] md:w-auto">
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -15,7 +15,7 @@ export default function NavBar() {
                         </div>
                         <div className="md:hidden">
                             <button
-                                className="p-2 text-gray-100 rounded-md outline-none focus:border-gray-400 focus:border"
+                                className="p-2 text-gray-100 rounded-md outline-none focus:border-gray-400 focus:"
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
@@ -51,15 +51,15 @@ export default function NavBar() {
                         </div>
                     </div>
                 </div>
-                <div className="w-[100%] md:w-auto">
+                <div className="w-[100%] md:w-auto ">
                     <div
                         className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0  ${navbar ? "block" : "hidden"
                             }`}
                     >
                         <ul className="items-start px-3 justify-start flex flex-col md:flex-row  md:flex md:space-x-6 text-xl font-[500] gap-4 uppercase">
-                            <li><a href="#home" className="mt-2 text-white">Bosh sahifa</a></li>
-                            <li><a href="#allproduct" className="mt-2 text-white">Tariflarimiz</a></li>
-                            <li><a href="#about" className="mt-2 text-white">Men haqimda</a></li>
+                            <li className="border-b pb-2"><a href="#home" className="mt-2 text-white">Bosh sahifa</a></li>
+                            <li className="border-b pb-2"><a href="#allproduct" className="mt-2 text-white">Tariflarimiz</a></li>
+                            <li className="border-b pb-2"><a href="#about" className="mt-2 text-white">Men haqimda</a></li>
                         </ul>
                     </div>
                 </div>
