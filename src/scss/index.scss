@@ -4,6 +4,9 @@
 @import url(./_bg.scss);
 @import url(./_button.scss);
 @import url(./_about.scss);
+html {
+    scroll-behavior: smooth;
+  }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {

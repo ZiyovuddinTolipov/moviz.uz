@@ -1,6 +1,5 @@
 import { useState } from "react";
 import logooq from "../assets/oq.png"
-import { CiHome } from "react-icons/ci";
 
 
 export default function NavBar() {
@@ -57,10 +56,10 @@ export default function NavBar() {
                         className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0  ${navbar ? "block" : "hidden"
                             }`}
                     >
-                        <ul className="items-start px-3 justify-start flex flex-col md:flex-row  md:flex md:space-x-6 text-xl font-[500] gap-4">
-                            <a href="#home" className="mt-2 text-white"><li>Bosh sahifa</li></a>
-                            <a href="#allproduct" className="mt-2 text-white"><li>Tariflarimiz</li></a>
-                            <a href="#about" className="mt-2 text-white"><li>Men haqimda</li></a>
+                        <ul className="items-start px-3 justify-start flex flex-col md:flex-row  md:flex md:space-x-6 text-xl font-[500] gap-4 uppercase">
+                            <li><a href="#home" className="mt-2 text-white">Bosh sahifa</a></li>
+                            <li><a href="#allproduct" className="mt-2 text-white">Tariflarimiz</a></li>
+                            <li><a href="#about" className="mt-2 text-white">Men haqimda</a></li>
                         </ul>
                     </div>
                 </div>
