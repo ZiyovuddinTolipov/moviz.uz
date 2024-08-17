@@ -57,9 +57,9 @@ export default function NavBar() {
                             }`}
                     >
                         <ul className="items-start px-3 justify-start flex flex-col md:flex-row  md:flex md:space-x-6 text-xl font-[500] gap-4 uppercase">
-                            <li className="border-b pb-2"><a href="#home" className="mt-2 text-white">Bosh sahifa</a></li>
-                            <li className="border-b pb-2"><a href="#allproduct" className="mt-2 text-white">Tariflarimiz</a></li>
-                            <li className="border-b pb-2"><a href="#about" className="mt-2 text-white">Men haqimda</a></li>
+                            <li className="border-b md:border-[0] pb-2 md:pb-0"><a href="#home" className="mt-2 text-white">Bosh sahifa</a></li>
+                            <li className="border-b md:border-[0] pb-2 md:pb-0"><a href="#allproduct" className="mt-2 text-white">Tariflarimiz</a></li>
+                            <li className="border-b md:border-[0] pb-2 md:pb-0"><a href="#about" className="mt-2 text-white">Men haqimda</a></li>
                         </ul>
                     </div>
                 </div>
