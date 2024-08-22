@@ -95,13 +95,13 @@ const About = () => {
                         <h3 className='mt-2 mb-1'>Adobe Photoshop</h3>
                         <div className="range" style={{ '--p': "66" }} />
                         <h3 className='mt-2 mb-1'>Adobe After Effect</h3>
-                        <div className="range" style={{ '--p': "60  " }} />
+                        <div className="range" style={{ '--p': "70  " }} />
                         <h3 className='mt-2 mb-1'>Cap Cut</h3>
                         <div className="range" style={{ '--p': "90  " }} />
                         <h3 className='mt-2 mb-1'>Vn</h3>
                         <div className="range" style={{ '--p': "70  " }} />
                         <h3 className='mt-2 mb-1'>Davenci Resolver</h3>
-                        <div className="range" style={{ '--p': "40  " }} />
+                        <div className="range" style={{ '--p': "70  " }} />
                     </div>
                 </div>
                 <div className="w-full md:w-1/2 flex items-end justify-center h-[300px] md:h-[600px]">
